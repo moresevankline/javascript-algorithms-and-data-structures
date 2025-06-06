@@ -15,4 +15,14 @@ function isInvalidInput(str) {
   const regex = /\d+e\d+/i;
   return str.match(regex);
 }
-console.log(isInvalidInput("10"));
+
+function addEntry() {
+  const targetInputContainer = document.querySelector(
+    `#${entryDropdown.value} .input-container`
+  );
+  const entryNumber =
+    targetInputContainer.querySelectorAll('input[type="text"]').length;
+  const HTMLString = `
+  <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />`;
+}
