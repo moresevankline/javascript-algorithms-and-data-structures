@@ -1,0 +1,59 @@
+body {
+  height: 100dvh;
+  width: 100dvw;
+  margin: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  padding-inline: 1em;
+}
+
+#palindrome-checker {
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  flex-direction: column;
+  max-width: 20rem;
+  align-self: center;
+  background-color: whitesmoke;
+}
+
+#palindrome-checker div {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem 0.5rem 2rem;
+  gap: 1em;
+}
+
+#definition {
+  max-width: 30rem;
+  margin-top: 2em;
+}
+
+input {
+  padding: 1em;
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+  padding-inline: 1em;
+}
+
+#result {
+  word-wrap: break-word;
+}
+
+.content {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+}
